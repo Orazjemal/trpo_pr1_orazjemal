@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Информационная страница учебного курса по основам веб-разработки.">
+  <title>Веб-старт — практическая работа № 1</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about" aria-label="Веб-старт — на главную">
+        <img src="images/logo.svg" width="44" height="44" alt="">
+        <span>Веб-старт</span>
+      </a>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#about">О курсе</a></li>
+          <li><a href="#tracks">Направления</a></li>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#signup">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Учебный курс · основы frontend</p>
+          <h1 id="hero-title">Создавайте понятные веб-страницы</h1>
+          <p class="hero-text">Разберите устройство HTML-документа, научитесь оформлять интерфейс с помощью CSS и проверять результат в браузере.</p>
+          <a class="button" href="#tracks">Посмотреть направления</a>
+        </div>
+        <img class="cover" src="images/cover.svg" alt="Иллюстрация экрана с элементами веб-страницы" width="520" height="360">
+      </div>
+    </section>
+
+    <section class="section container" id="tracks" aria-labelledby="tracks-title">
+      <div class="section-heading">
+        <p class="eyebrow">Программа</p>
+        <h2 id="tracks-title">Направления курса</h2>
+        <p>Шесть тем из исходного набора данных. Число в карточке показывает значение поля value из content.csv.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="card-index">01</span><p class="card-category">Основа</p><h3>HTML</h3><p>Структура и семантика документа</p><p class="card-value"><strong>8</strong><span>из 10</span></p></article>
+        <article class="card"><span class="card-index">02</span><p class="card-category">Оформление</p><h3>CSS</h3><p>Стили и адаптивность</p><p class="card-value"><strong>9</strong><span>из 10</span></p></article>
+        <article class="card"><span class="card-index">03</span><p class="card-category">Инструменты</p><h3>Git</h3><p>История изменений</p><p class="card-value"><strong>7</strong><span>из 10</span></p></article>
+        <article class="card"><span class="card-index">04</span><p class="card-category">HTML</p><h3>Forms</h3><p>Пользовательский ввод</p><p class="card-value"><strong>6</strong><span>из 10</span></p></article>
+        <article class="card"><span class="card-index">05</span><p class="card-category">Качество</p><h3>Accessibility</h3><p>Доступность интерфейса</p><p class="card-value"><strong>10</strong><span>из 10</span></p></article>
+        <article class="card"><span class="card-index">06</span><p class="card-category">Проверка</p><h3>DevTools</h3><p>Исследование DOM и стилей</p><p class="card-value"><strong>8</strong><span>из 10</span></p></article>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="schedule" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">План обучения</p>
+          <h2 id="schedule-title">Планируемые темы</h2>
+          <p>В таблице направления упорядочены по учебным занятиям. Оценка и описание взяты из dataset.</p>
+        </div>
+        <div class="table-wrap" tabindex="0" aria-label="Прокручиваемая таблица плана обучения">
+          <table>
+            <caption>Шесть тем курса и их оценочные значения</caption>
+            <thead><tr><th scope="col">Занятие</th><th scope="col">Тема</th><th scope="col">Раздел</th><th scope="col">Что изучаем</th><th scope="col">Значение</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1</th><td>HTML</td><td>Основа</td><td>Структура и семантика документа</td><td>8 / 10</td></tr>
+              <tr><th scope="row">2</th><td>CSS</td><td>Оформление</td><td>Стили и адаптивность</td><td>9 / 10</td></tr>
+              <tr><th scope="row">3</th><td>Git</td><td>Инструменты</td><td>История изменений</td><td>7 / 10</td></tr>
+              <tr><th scope="row">4</th><td>Forms</td><td>HTML</td><td>Пользовательский ввод</td><td>6 / 10</td></tr>
+              <tr><th scope="row">5</th><td>Accessibility</td><td>Качество</td><td>Доступность интерфейса</td><td>10 / 10</td></tr>
+              <tr><th scope="row">6</th><td>DevTools</td><td>Проверка</td><td>Исследование DOM и стилей</td><td>8 / 10</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="signup" aria-labelledby="signup-title">
+      <div class="form-intro">
+        <p class="eyebrow">Следующий шаг</p>
+        <h2 id="signup-title">Получить план курса</h2>
+        <p>Заполните форму, чтобы потренироваться с элементами ввода и встроенной проверкой браузера. Данные никуда не отправляются.</p>
+      </div>
+      <form class="signup-form" action="#signup" method="get">
+        <div class="field"><label for="name">Имя</label><input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" required></div>
+        <div class="field"><label for="email">Электронная почта</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="level">Ваш уровень</label><select id="level" name="level" required><option value="" selected disabled>Выберите вариант</option><option value="start">Начинаю с нуля</option><option value="basic">Знаком(а) с основами</option><option value="practice">Уже практикуюсь</option></select></div>
+        <div class="field"><label for="hours">Сколько часов в неделю готовы заниматься</label><input id="hours" name="hours" type="number" min="1" max="40" step="1" required></div>
+        <div class="field field-wide"><label for="comment">Что хотите изучить в первую очередь</label><textarea id="comment" name="comment" rows="4" maxlength="500" placeholder="Например: семантическую разметку и формы"></textarea></div>
+        <button class="button" type="submit">Подтвердить выбор</button>
+        <p class="form-note">Поля с именем, почтой, уровнем и количеством часов обязательны.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="#about"><img src="images/logo.svg" width="32" height="32" alt=""><span>Веб-старт</span></a><p>Практическая работа № 1 · HTML и CSS</p></div></footer>
+</body>
+</html>
